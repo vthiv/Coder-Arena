@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEGi Coder's Arena 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+ 
+  <div class="cursor-glow" id="cursorGlow"></div>
+ 
+  <nav class="side-nav" id="sideNav">
+    <button class="nav-dot active" data-section="0" title="Home"></button>
+    <button class="nav-dot" data-section="1" title="About"></button>
+    <button class="nav-dot" data-section="2" title="Details"></button>
+    <button class="nav-dot" data-section="3" title="Rules"></button>
+    <button class="nav-dot" data-section="4" title="Prizes"></button>
+    <button class="nav-dot" data-section="5" title="Register"></button>
+    <button class="nav-dot" data-section="6" title="Contact"></button>
+  </nav>
+ 
+  <!-- =============================================
+       TOP BAR
+  ============================================= -->
+  <header class="topbar">
+    <div class="lbox">
+      <img src="logo.png" alt="SEGi Logo" class="logo-img">
+      <div class="ltxt">
+        SEGi COLLEGE
+        <span>Kuala Lumpur</span>
+      </div>
+    </div>
+ 
+    <div></div>
+ 
+    <div class="lbox right-box">
+      <img src="logo2.png" alt="School Logo" class="logo-img">
+      <div class="ltxt">
+        SCHOOL OF
+        <span>Computing &amp; IT</span>
+      </div>
+    </div>
+  </header>
+ 
+  <div class="slides-wrapper" id="slidesWrapper">
+ 
+    <!-- SLIDE 0 : HERO -->
+    <section class="slide" id="slide-0">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="pulse-dot"></span>Registration Closes 8 June 2026</div>
+        <div class="hero-org-row">
+          <span>SEGi College Kuala Lumpur</span>
+          <span class="org-x">×</span>
+          <span>School of Computing &amp; IT</span>
+        </div>
+        <p class="hero-pre">BE PART OF</p>
+        <h1 class="hero-title glitch" data-text="SEGi Coder's Arena">SEGi Coder's Arena</h1>
+        <p class="hero-tagline"><span id="typingText"></span><span class="cursor-blink">|</span></p>
+        <div class="countdown-block">
+          <div class="count-unit"><span id="days">00</span><label>Days</label></div>
+          <div class="count-sep">:</div>
+          <div class="count-unit"><span id="hours">00</span><label>Hours</label></div>
+          <div class="count-sep">:</div>
+          <div class="count-unit"><span id="mins">00</span><label>Mins</label></div>
+          <div class="count-sep">:</div>
+          <div class="count-unit"><span id="secs">00</span><label>Secs</label></div>
+        </div>
+        <div class="hero-facts">
+          <div class="hf"><i class="fas fa-calendar-days"></i><span>10 June 2026</span></div>
+          <div class="hf-div"></div>
+          <div class="hf"><i class="fas fa-clock"></i><span>10:00 AM – 4:00 PM</span></div>
+          <div class="hf-div"></div>
+          <div class="hf"><i class="fas fa-location-dot"></i><span>Ground Floor, Main Bldg</span></div>
+          <div class="hf-div"></div>
+          <div class="hf"><i class="fas fa-ticket"></i><span>RM10 / person</span></div>
+        </div>
+        <div class="hero-actions">
+          <button class="btn-primary glow-btn" onclick="goToSection(5)">
+            <span>Register Now</span><i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="float-icons">
+        <span class="fi fi-1"><i class="fas fa-code"></i></span>
+        <span class="fi fi-2"><i class="fas fa-terminal"></i></span>
+        <span class="fi fi-3"><i class="fas fa-microchip"></i></span>
+        <span class="fi fi-4"><i class="fas fa-graduation-cap"></i></span>
+        <span class="fi fi-5"><i class="fas fa-brain"></i></span>
+        <span class="fi fi-6"><i class="fas fa-laptop-code"></i></span>
+        <span class="fi fi-7"><i class="fas fa-trophy"></i></span>
+      </div>
+    </section>
+ 
+    <!-- SLIDE 1 : ABOUT -->
+    <section class="slide" id="slide-1">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">01 / About</span>
+          <h2>What is <span class="neon-text">Coder's Arena?</span></h2>
+          <p class="section-sub">Code, Compete, Conquer. Win SEGi Scholarships!</p>
+        </div>
+        <div class="about-grid" data-animate>
+          <div class="glass-card about-card">
+            <div class="card-icon"><i class="fas fa-users"></i></div>
+            <h3>Open to Public</h3>
+            <p>Open to SPM Leavers &amp; Pre-University Students. Participants may be from any institution with basic to advanced programming skills.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="card-icon"><i class="fas fa-people-group"></i></div>
+            <h3>Team Format</h3>
+            <p>Limited to the first 10 groups only. Each group consists of 3 persons. Register individually and the organizer will group you into a team.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="card-icon"><i class="fas fa-book-open"></i></div>
+            <h3>Open Book Competition</h3>
+            <p>Hardcopy notes, books and reference materials are allowed. Softcopy materials including phones, laptops and tablets are NOT permitted.</p>
+          </div>
+        </div>
+        <div class="about-stats" data-animate>
+          <div class="stat"><span class="stat-num" data-target="10">0</span><label>Max Groups</label></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num" data-target="3">0</span><label>Per Group</label></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num" data-target="75">0</span><span class="stat-plus">%</span><label>Top Scholarship</label></div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- SLIDE 2 : COMPETITION DETAILS -->
+    <section class="slide" id="slide-2">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">02 / Details</span>
+          <h2>Competition <span class="neon-text">Details</span></h2>
+          <p class="section-sub">Everything you need to know before you compete.</p>
+        </div>
+        <div class="details-grid" data-animate>
+          <div class="detail-card glass-card">
+            <div class="detail-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="detail-body">
+              <h4>Date of Competition</h4>
+              <p>10 / 06 / 2026 <span class="detail-badge">Wednesday</span></p>
+            </div>
+          </div>
+          <div class="detail-card glass-card">
+            <div class="detail-icon"><i class="fas fa-calendar-xmark"></i></div>
+            <div class="detail-body">
+              <h4>Registration Closing Date</h4>
+              <p>08 / 06 / 2026 <span class="detail-badge red-badge">Monday</span></p>
+            </div>
+          </div>
+          <div class="detail-card glass-card">
+            <div class="detail-icon"><i class="fas fa-clock"></i></div>
+            <div class="detail-body">
+              <h4>Time</h4>
+              <p>10:00 AM – 4:00 PM</p>
+            </div>
+          </div>
+          <div class="detail-card glass-card">
+            <div class="detail-icon"><i class="fas fa-location-dot"></i></div>
+            <div class="detail-body">
+              <h4>Venue</h4>
+              <p>Ground Floor, Main Building, SEGi College Kuala Lumpur</p>
+            </div>
+          </div>
+          <div class="detail-card glass-card">
+            <div class="detail-icon"><i class="fas fa-money-bill-wave"></i></div>
+            <div class="detail-body">
+              <h4>Entry Fee</h4>
+              <p>RM10 per person</p>
+            </div>
+          </div>
+          <div class="detail-card glass-card">
+            <div class="detail-icon"><i class="fas fa-users"></i></div>
+            <div class="detail-body">
+              <h4>Group Size</h4>
+              <p>3 persons per group <span class="detail-badge">Max 10 Groups</span></p>
+            </div>
+          </div>
+          <div class="detail-card glass-card">
+            <div class="detail-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="detail-body">
+              <h4>Competition Type</h4>
+              <p>Open Book — Hardcopy only</p>
+            </div>
+          </div>
+          <div class="detail-card glass-card">
+            <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="detail-body">
+              <h4>Eligibility</h4>
+              <p>SPM Leavers &amp; Pre-University Students</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- SLIDE 3 : RULES -->
+    <section class="slide" id="slide-3">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">03 / Rules</span>
+          <h2>Rules &amp; <span class="neon-text">Guidelines</span></h2>
+          <p class="section-sub">Read carefully before the competition day.</p>
+        </div>
+        <div class="rules-grid" data-animate>
+          <div class="rules-col">
+            <div class="glass-card rules-block">
+              <h4><i class="fas fa-book"></i>Materials Allowed</h4>
+              <ul class="rules-list">
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>Hardcopy notes and references</li>
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>Printed books and textbooks</li>
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>Calculator (non-programmable)</li>
+                <li class="rule-no"><i class="fas fa-xmark-circle"></i>No phones, laptops or tablets</li>
+                <li class="rule-no"><i class="fas fa-xmark-circle"></i>No softcopy/digital materials</li>
+              </ul>
+            </div>
+            <div class="glass-card rules-block">
+              <h4><i class="fas fa-users-gear"></i>Team Rules</h4>
+              <ul class="rules-list">
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>Register individually</li>
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>Organizer assigns groups of 3</li>
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>First 10 groups secured</li>
+                <li class="rule-no"><i class="fas fa-xmark-circle"></i>No late registrations accepted</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rules-col">
+            <div class="glass-card rules-block">
+              <h4><i class="fas fa-shield-halved"></i>Competition Conduct</h4>
+              <ul class="rules-list">
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>Arrive on time (10:00 AM)</li>
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>Abide by organizer's decisions</li>
+                <li class="rule-warn"><i class="fas fa-triangle-exclamation"></i>Rely on your own group's effort only</li>
+                <li class="rule-no"><i class="fas fa-xmark-circle"></i>No external help from teachers, lecturers or tutors</li>
+                <li class="rule-info"><i class="fas fa-globe"></i>Eligibility: <strong>Open to the public</strong></li>
+              </ul>
+            </div>
+            <div class="glass-card rules-block">
+              <h4><i class="fas fa-certificate"></i>Rewards</h4>
+              <ul class="rules-list">
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>Top 3 groups win scholarships</li>
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>All participants get e-certificate</li>
+                <li class="rule-ok"><i class="fas fa-circle-check"></i>All participants receive goodies</li>
+                <li class="rule-info"><i class="fas fa-info-circle"></i>Champion gets 75% SEGi scholarship</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- SLIDE 4 : PRIZES -->
+    <section class="slide" id="slide-4">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">04 / Prizes</span>
+          <h2>Prizes for <span class="neon-text gold-text">Top 3 Groups</span></h2>
+          <p class="section-sub">Code your way to a scholarship. All participants receive E-Certificate &amp; Goodies!</p>
+        </div>
+        <div class="prizes-podium" data-animate>
+          <div class="prize-card silver">
+            <div class="prize-pos">2<sup>nd</sup></div>
+            <div class="prize-trophy"><i class="fas fa-medal"></i></div>
+            <h3>1st Runner Up</h3>
+            <div class="prize-pct">50%</div>
+            <div class="prize-lbl">SEGi Scholarship</div>
+            <ul class="prize-perks">
+              <li><i class="fas fa-check"></i> Scholarship Award</li>
+              <li><i class="fas fa-check"></i> E-Certificate</li>
+              <li><i class="fas fa-check"></i> Goodies</li>
+            </ul>
+          </div>
+          <div class="prize-card gold featured">
+            <div class="prize-crown"><i class="fas fa-crown"></i></div>
+            <div class="prize-pos">1<sup>st</sup></div>
+            <div class="prize-trophy"><i class="fas fa-trophy"></i></div>
+            <h3>Champion</h3>
+            <div class="prize-pct">75%</div>
+            <div class="prize-lbl">SEGi Scholarship</div>
+            <ul class="prize-perks">
+              <li><i class="fas fa-check"></i> Top Scholarship Award</li>
+              <li><i class="fas fa-check"></i> E-Certificate</li>
+              <li><i class="fas fa-check"></i> Goodies</li>
+              <li><i class="fas fa-check"></i> Champion Recognition</li>
+            </ul>
+            <div class="prize-ring"></div>
+          </div>
+          <div class="prize-card bronze">
+            <div class="prize-pos">3<sup>rd</sup></div>
+            <div class="prize-trophy"><i class="fas fa-award"></i></div>
+            <h3>2nd Runner Up</h3>
+            <div class="prize-pct">25%</div>
+            <div class="prize-lbl">SEGi Scholarship</div>
+            <ul class="prize-perks">
+              <li><i class="fas fa-check"></i> Scholarship Award</li>
+              <li><i class="fas fa-check"></i> E-Certificate</li>
+              <li><i class="fas fa-check"></i> Goodies</li>
+            </ul>
+          </div>
+        </div>
+        <div class="prize-quote" data-animate>
+          <i class="fas fa-quote-left"></i>
+          It's Not Just About Winning, It's About Proving Yourself!!
+          <i class="fas fa-quote-right"></i>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- SLIDE 5 : REGISTER -->
+    <section class="slide" id="slide-5">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-label">05 / Register</span>
+      <h2>Join <span class="neon-text">Coder's Arena</span></h2>
+      <p class="section-sub">Scan the QR or click the link to secure your spot. Limited to 10 groups!</p>
+      
+      <div class="highlights">
+        <h4>Why Join?</h4>
+        <div class="grid">
+          <div class="box">⚡ Fast-paced coding challenges</div>
+          <div class="box">🤝 Team collaboration experience</div>
+          <div class="box">🚀 Boost your portfolio</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card glass-card qr-register" data-animate>
+      
+      <div class="qr-box-wrapper">
+        <div class="qr-box">
+          <img src="QR.png" alt="Registration QR Code">
+        </div>
+        <h3 class="qr-title">Scan to Register</h3>
+      </div>
+
+      <div class="qr-content">
+        <p class="qr-text">
+          Scan the QR Code to register for
+          <strong>SEGi Coder's Arena 2026</strong>
+        </p>
+        <div class="qr-info">
+          <div><i class="fas fa-calendar"></i> Deadline: 8 June 2026</div>
+          <div><i class="fas fa-money-bill-wave"></i> RM10 per person</div>
+          <div><i class="fas fa-users"></i> Limited to 10 Groups</div>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScpuVBfuFEIQNlbTuOuPNF25zq3spS7JoFCED67p_dhVbDwHg/viewform?usp=sharing&ouid=113571299229635502375"
+          target="_blank"
+          class="btn-primary glow-btn">
+          <span>Open Registration Link</span>
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+    <!-- SLIDE 6 : CONTACT / FOOTER -->
+    <section class="slide footer-slide" id="slide-6">
+      <div class="footer-top-glow"></div>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo-mark lg">
+              <span class="logo-bracket">&lt;</span>SEGi<span class="logo-slash">Coder's</span>Arena<span class="logo-bracket">&gt;</span>
+            </div>
+            <p>Organised by the School of Computing &amp; Information Technology, SEGi College Kuala Lumpur.</p>
+            <p class="footer-motto">"It's Not Just About Winning, It's About Proving Yourself !!"</p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#" onclick="goToSection(0);return false;"><i class="fas fa-chevron-right"></i>Home</a></li>
+              <li><a href="#" onclick="goToSection(1);return false;"><i class="fas fa-chevron-right"></i>About</a></li>
+              <li><a href="#" onclick="goToSection(2);return false;"><i class="fas fa-chevron-right"></i>Competition Details</a></li>
+              <li><a href="#" onclick="goToSection(3);return false;"><i class="fas fa-chevron-right"></i>Rules &amp; Guidelines</a></li>
+              <li><a href="#" onclick="goToSection(4);return false;"><i class="fas fa-chevron-right"></i>Prizes</a></li>
+              <li><a href="#" onclick="goToSection(5);return false;"><i class="fas fa-chevron-right"></i>Register</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p class="contact-person-name"><i class="fas fa-user"></i> Ms. Thivyah Vijayan</p>
+            <ul class="contact-list">
+              <li><i class="fas fa-phone"></i>016-3724410</li>
+              <li><i class="fas fa-envelope"></i>thivyahvijayan@segi.edu.my</li>
+              <li><i class="fas fa-location-dot"></i>Ground Floor, Main Building,<br>SEGi College Kuala Lumpur</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Key Dates</h4>
+            <div class="date-list">
+              <div class="date-item">
+                <span class="date-badge">8 Jun</span><span>Registration Closes (Mon)</span>
+              </div>
+              <div class="date-item">
+                <span class="date-badge">10 Jun</span><span>Competition Day (Wed)</span>
+              </div>
+              <div class="date-item">
+                <span class="date-badge">10:00 AM</span><span>Competition Starts</span>
+              </div>
+              <div class="date-item">
+                <span class="date-badge">4:00 PM</span><span>Competition Ends</span>
+              </div>
+            </div>
+            <div class="deadline-alert">
+              <i class="fas fa-bell"></i>
+              Deadline: <strong>8th June 2026</strong>. Register now!
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 SEGi Coder's Arena · School of Computing &amp; IT · SEGi College Kuala Lumpur</p>
+          <p class="footer-made">Made with <i class="fas fa-heart"></i> for the next generation of coders</p>
+        </div>
+      </div>
+    </section>
+ 
+  </div><!-- end slides-wrapper -->
+ 
+  <div class="autoslide-bar"><div class="autoslide-fill" id="autoslideFill"></div></div>
+ 
+  <script src="script.js"></script>
+  
+</body>
+</html>
