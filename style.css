@@ -136,11 +136,17 @@ button { border: none; background: none; font-family: inherit; cursor: none; }
  
 /* ── AUTOSLIDE BAR ── */
 .autoslide-bar {
-  position: fixed; bottom: 0; left: 0; right: 0;
-  height: 3px; background: rgba(255,255,255,.05); z-index: 300;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  height: 3px; 
+  background: rgba(255,255,255,.05); 
+  z-index: 300;
 }
 .autoslide-fill {
-  height: 100%; width: 0%;
+  height: 100%; 
+  width: 0%;
   background: linear-gradient(90deg, var(--purple), var(--cyan));
   box-shadow: 0 0 8px var(--cyan);
   transition: width 0.1s linear;
@@ -174,7 +180,7 @@ button { border: none; background: none; font-family: inherit; cursor: none; }
 /* ── SECTION HEADER ── */
 .section-header { text-align: center; 
   margin-bottom: 2rem; 
-  margin-top: 2rem; /* Adds safe spacing below the fixed navbar */ }
+  margin-top: 3rem; /* Adds safe spacing below the fixed navbar */ }
   
 .section-label {
   display: block;
@@ -651,12 +657,14 @@ button { border: none; background: none; font-family: inherit; cursor: none; }
   border: 1px solid rgba(180,120,60,.28);
   height: 245px;
 }
-.prize-pos { font-size: .7rem; margin-bottom: .4rem; }
+.prize-pos1 { font-size: .7rem; margin-bottom: .2rem; margin-top: 1rem; }
+.prize-pos { font-size: .7rem; margin-bottom: .2rem; }
+.prize-pos2 { font-size: .7rem; margin-bottom: .1rem; }
 .prize-trophy { font-size: 1.8rem; margin-bottom: .5rem; }
 .prize-card h3 { font-size: .8rem; margin-bottom: .25rem; }
 .prize-pct { font-size: 1.5rem; margin-bottom: .1rem; }
 .prize-lbl { font-size: .65rem; margin-bottom: .6rem; }
-.prize-perks li { font-size: .7rem; margin-bottom: .3rem; }
+.prize-perks li { font-size: .6rem; margin-bottom: .2rem; }
 
 .extra-pill {
   padding: .4rem .9rem;
@@ -673,8 +681,12 @@ button { border: none; background: none; font-family: inherit; cursor: none; }
  
 /* Prize crown and ring */
 .prize-crown {
-  position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
-  font-size: 1.2rem; color: var(--gold);
+  position: absolute; 
+  top: .02px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  font-size: 1.2rem; 
+  color: var(--gold);
   filter: drop-shadow(0 0 8px rgba(245,158,11,.6));
 }
 .prize-ring {
@@ -1082,6 +1094,8 @@ button { border: none; background: none; font-family: inherit; cursor: none; }
   }
  
   #slide-3 .container { padding: 0; }
+  .section-label{
+  margin-top:80px;}
  
   .rules-grid {
     grid-template-columns: 1fr !important;
@@ -1121,8 +1135,9 @@ button { border: none; background: none; font-family: inherit; cursor: none; }
   .prize-card {
     width: 100% !important;
     max-width: 300px;
-    height: auto !important;
+    height: 380px !important;
     padding: 1.2rem !important;
+	padding-top: 2rem;
   }
  
   .prize-card.gold { order: -1; }
