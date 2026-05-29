@@ -1202,7 +1202,6 @@ button { border: none; background: none; font-family: inherit; cursor: none; }
   }
  
 }
- 
 /* Extra small phones */
 @media (max-width: 380px) {
   .hero-title { font-size: 1.4rem; }
